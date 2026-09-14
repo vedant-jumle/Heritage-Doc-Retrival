@@ -1,0 +1,22 @@
+check,claimed,actual,ok
+matched sentences = 737,737.0,737.0,True
+unique positive pairs = 529,529.0,529.0,True
+total chunks N = 2926,2926.0,2926.0,True
+labelled chunks = 318,318.0,317.0,False
+unmatched sentences = 4,4.0,32.0,False
+BM25 MRR,0.318,0.3176924495133647,True
+BM25 Hit@1,0.208,0.20833333333333334,True
+BM25 Hit@3,0.333,0.3333333333333333,True
+BM25 MAP,0.13,0.13020891411418326,True
+Bi-encoder MRR,0.23,0.22996661569282895,True
+Bi-encoder Hit@1,0.167,0.16666666666666666,True
+Bi-encoder Hit@3,0.208,0.20833333333333334,True
+Bi-encoder MAP,0.13,0.13002416602820027,True
+Dense + Rerank MRR,0.36,0.359798115121927,True
+Dense + Rerank Hit@1,0.208,0.20833333333333334,True
+Dense + Rerank Hit@3,0.5,0.5,True
+Dense + Rerank MAP,0.117,0.11740513553590964,True
+Cross-encoder MRR,0.452,0.4523596774886827,True
+Cross-encoder Hit@1,0.292,0.2916666666666667,True
+Cross-encoder Hit@3,0.542,0.5416666666666666,True
+Cross-encoder MAP,0.136,0.13604921442976484,True

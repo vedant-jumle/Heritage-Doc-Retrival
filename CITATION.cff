@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite both the paper and the underlying annotation dataset."
+title: "Retrieving Climate Change Adaptation Concepts from World Heritage Management Plans in the Netherlands"
+abstract: >-
+  Code, extracted chunks, concept definitions, alignment output and
+  LLM-as-judge prompts and judgements accompanying the ClimateNLP workshop
+  paper on retrieving climate change adaptation concepts from Dutch World
+  Heritage management plans.
+authors:
+  - family-names: Jumle
+    given-names: Vedant
+type: software
+license: MIT
+repository-code: "https://github.com/vedant-jumle/Heritage-Doc-Retrival"
+keywords:
+  - information retrieval
+  - cultural heritage
+  - climate change adaptation
+  - LLM-as-judge
+  - cross-encoder
+references:
+  - type: data
+    title: >-
+      Data from 'Unveiling Climate-Adaptive World Heritage Management
+      Strategies: the Netherlands as a Case Study'
+    authors:
+      - family-names: Cheang
+        given-names: Kai
+        orcid: "https://orcid.org/0009-0002-5231-5517"
+      - family-names: Bai
+        given-names: Nan
+        orcid: "https://orcid.org/0000-0001-7637-3629"
+      - family-names: Pereira Roders
+        given-names: Ana
+        orcid: "https://orcid.org/0000-0003-2571-9882"
+    license: CC-BY-4.0
+    year: 2025

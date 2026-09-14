@@ -1,0 +1,145 @@
+system,label,n_positives,Hit@1,R@1,Hit@3,R@3,Hit@5,R@5,Hit@10,R@10,Hit@20,R@20,Hit@50,R@50,Hit@100,R@100,variant
+BM25,Adaptation,14,0,0.0,0,0.0,0,0.0,1,0.0714,1,0.1429,1,0.3571,1,0.4286,name_only
+BM25,Assessment,22,0,0.0,1,0.0455,1,0.0455,1,0.0455,1,0.1818,1,0.2273,1,0.2273,name_only
+BM25,Climate change,42,1,0.0238,1,0.0238,1,0.0476,1,0.0476,1,0.1429,1,0.381,1,0.5952,name_only
+BM25,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+BM25,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0189,1,0.0377,1,0.0943,name_only
+BM25,Fisheries management,7,1,0.1429,1,0.2857,1,0.5714,1,1.0,1,1.0,1,1.0,1,1.0,name_only
+BM25,Framework,44,0,0.0,0,0.0,1,0.0227,1,0.0227,1,0.0227,1,0.0227,1,0.0455,name_only
+BM25,Greenery,8,0,0.0,0,0.0,0,0.0,0,0.0,1,0.125,1,0.5,1,0.5,name_only
+BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.037,1,0.037,name_only
+BM25,Human activities,12,0,0.0,0,0.0,1,0.0833,1,0.1667,1,0.1667,1,0.1667,1,0.25,name_only
+BM25,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0952,1,0.1746,name_only
+BM25,Legislation,34,1,0.0294,1,0.0294,1,0.0294,1,0.0294,1,0.0294,1,0.0882,1,0.0882,name_only
+BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+BM25,Management variation,5,0,0.0,0,0.0,1,0.2,1,0.2,1,0.2,1,0.2,1,0.2,name_only
+BM25,Maritime management,2,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+BM25,Monitoring,32,0,0.0,1,0.0312,1,0.0312,1,0.0312,1,0.0625,1,0.2188,1,0.4688,name_only
+BM25,Multi-level management,18,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1667,name_only
+BM25,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+BM25,Research,23,0,0.0,1,0.0435,1,0.087,1,0.1304,1,0.1739,1,0.3043,1,0.3913,name_only
+BM25,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+BM25,Restoration,5,0,0.0,0,0.0,0,0.0,1,0.2,1,0.2,1,0.2,1,0.2,name_only
+BM25,Soil subsidence,2,0,0.0,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,name_only
+BM25,Stakeholder collaboration,39,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1538,1,0.2564,name_only
+BM25,Water management,40,0,0.0,0,0.0,0,0.0,0,0.0,1,0.075,1,0.2,1,0.4,name_only
+Bi-encoder,Adaptation,14,0,0.0,0,0.0,0,0.0,1,0.0714,1,0.0714,1,0.1429,1,0.2143,name_only
+Bi-encoder,Assessment,22,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0455,1,0.1364,name_only
+Bi-encoder,Climate change,42,1,0.0238,1,0.0238,1,0.0476,1,0.0714,1,0.0952,1,0.3333,1,0.5476,name_only
+Bi-encoder,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0189,1,0.0943,name_only
+Bi-encoder,Fisheries management,7,1,0.1429,1,0.4286,1,0.5714,1,0.8571,1,1.0,1,1.0,1,1.0,name_only
+Bi-encoder,Framework,44,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0227,name_only
+Bi-encoder,Greenery,8,0,0.0,0,0.0,1,0.125,1,0.125,1,0.125,1,0.125,1,0.25,name_only
+Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0741,name_only
+Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0317,1,0.0635,1,0.0794,name_only
+Bi-encoder,Legislation,34,0,0.0,0,0.0,1,0.0294,1,0.0294,1,0.0588,1,0.1176,1,0.1176,name_only
+Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,name_only
+Bi-encoder,Monitoring,32,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0312,1,0.1875,name_only
+Bi-encoder,Multi-level management,18,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0556,name_only
+Bi-encoder,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Research,23,0,0.0,0,0.0,1,0.0435,1,0.0435,1,0.0435,1,0.1739,1,0.2609,name_only
+Bi-encoder,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
+Bi-encoder,Restoration,5,0,0.0,0,0.0,0,0.0,1,0.2,1,0.2,1,0.2,1,0.2,name_only
+Bi-encoder,Soil subsidence,2,1,0.5,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,name_only
+Bi-encoder,Stakeholder collaboration,39,0,0.0,0,0.0,0,0.0,1,0.0256,1,0.0513,1,0.1026,1,0.2051,name_only
+Bi-encoder,Water management,40,0,0.0,0,0.0,0,0.0,1,0.025,1,0.075,1,0.2,1,0.35,name_only
+BM25,Adaptation,14,0,0.0,0,0.0,1,0.0714,1,0.1429,1,0.1429,1,0.4286,1,0.4286,def_only
+BM25,Assessment,22,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0455,1,0.0455,1,0.0909,def_only
+BM25,Climate change,42,1,0.0238,1,0.0714,1,0.119,1,0.2143,1,0.2619,1,0.5,1,0.5952,def_only
+BM25,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+BM25,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0566,def_only
+BM25,Fisheries management,7,1,0.1429,1,0.2857,1,0.2857,1,0.5714,1,0.7143,1,0.8571,1,0.8571,def_only
+BM25,Framework,44,0,0.0,0,0.0,1,0.0455,1,0.0455,1,0.0455,1,0.1136,1,0.1364,def_only
+BM25,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.375,1,0.75,def_only
+BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,1,0.0741,1,0.0741,1,0.0741,1,0.2222,def_only
+BM25,Human activities,12,0,0.0,0,0.0,0,0.0,1,0.0833,1,0.1667,1,0.25,1,0.4167,def_only
+BM25,Knowledge transfer,63,0,0.0,1,0.0159,1,0.0159,1,0.0159,1,0.0317,1,0.1587,1,0.254,def_only
+BM25,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0294,1,0.1176,1,0.2647,def_only
+BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.5,def_only
+BM25,Management variation,5,0,0.0,1,0.2,1,0.2,1,0.4,1,0.4,1,0.6,1,0.8,def_only
+BM25,Maritime management,2,0,0.0,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,def_only
+BM25,Monitoring,32,0,0.0,1,0.0312,1,0.0312,1,0.0312,1,0.0625,1,0.0938,1,0.2188,def_only
+BM25,Multi-level management,18,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+BM25,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+BM25,Research,23,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+BM25,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+BM25,Restoration,5,1,0.2,1,0.2,1,0.2,1,0.2,1,0.2,1,0.4,1,0.4,def_only
+BM25,Soil subsidence,2,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.5,def_only
+BM25,Stakeholder collaboration,39,1,0.0256,1,0.0256,1,0.0513,1,0.0513,1,0.0513,1,0.0769,1,0.1026,def_only
+BM25,Water management,40,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.05,1,0.125,def_only
+Bi-encoder,Adaptation,14,0,0.0,0,0.0,1,0.0714,1,0.1429,1,0.1429,1,0.3571,1,0.5,def_only
+Bi-encoder,Assessment,22,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0909,def_only
+Bi-encoder,Climate change,42,1,0.0238,1,0.0476,1,0.0476,1,0.0952,1,0.119,1,0.3333,1,0.5476,def_only
+Bi-encoder,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+Bi-encoder,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0566,def_only
+Bi-encoder,Fisheries management,7,1,0.1429,1,0.4286,1,0.5714,1,0.8571,1,0.8571,1,1.0,1,1.0,def_only
+Bi-encoder,Framework,44,0,0.0,0,0.0,0,0.0,1,0.0227,1,0.1136,1,0.1364,1,0.2273,def_only
+Bi-encoder,Greenery,8,0,0.0,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.375,def_only
+Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,1,0.2593,def_only
+Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0833,1,0.3333,1,0.75,def_only
+Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0476,1,0.127,def_only
+Bi-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.1176,1,0.1765,1,0.2353,def_only
+Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.2,1,0.4,def_only
+Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,def_only
+Bi-encoder,Monitoring,32,0,0.0,0,0.0,0,0.0,1,0.0312,1,0.0312,1,0.0938,1,0.125,def_only
+Bi-encoder,Multi-level management,18,0,0.0,0,0.0,0,0.0,1,0.0556,1,0.0556,1,0.2778,1,0.3889,def_only
+Bi-encoder,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+Bi-encoder,Research,23,0,0.0,1,0.0435,1,0.0435,1,0.0435,1,0.0435,1,0.087,1,0.1739,def_only
+Bi-encoder,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
+Bi-encoder,Restoration,5,0,0.0,0,0.0,0,0.0,0,0.0,1,0.2,1,0.4,1,0.8,def_only
+Bi-encoder,Soil subsidence,2,1,0.5,1,0.5,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,def_only
+Bi-encoder,Stakeholder collaboration,39,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0256,1,0.1538,def_only
+Bi-encoder,Water management,40,0,0.0,0,0.0,0,0.0,1,0.025,1,0.05,1,0.15,1,0.275,def_only
+BM25,Adaptation,14,0,0.0,0,0.0,1,0.0714,1,0.0714,1,0.2143,1,0.3571,1,0.4286,name_plus_def
+BM25,Assessment,22,0,0.0,1,0.0455,1,0.0455,1,0.0455,1,0.0455,1,0.0455,1,0.1818,name_plus_def
+BM25,Climate change,42,1,0.0238,1,0.0714,1,0.119,1,0.1667,1,0.2857,1,0.5,1,0.619,name_plus_def
+BM25,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+BM25,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0755,1,0.1321,name_plus_def
+BM25,Fisheries management,7,1,0.1429,1,0.2857,1,0.4286,1,0.8571,1,0.8571,1,1.0,1,1.0,name_plus_def
+BM25,Framework,44,0,0.0,0,0.0,1,0.0227,1,0.0455,1,0.0682,1,0.1364,1,0.1818,name_plus_def
+BM25,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.75,1,0.875,name_plus_def
+BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,1,0.0741,1,0.0741,1,0.0741,1,0.1852,name_plus_def
+BM25,Human activities,12,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.1667,1,0.4167,1,0.4167,name_plus_def
+BM25,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0159,1,0.0476,1,0.1746,1,0.2698,name_plus_def
+BM25,Legislation,34,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.2353,name_plus_def
+BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.25,name_plus_def
+BM25,Management variation,5,0,0.0,1,0.2,1,0.2,1,0.6,1,0.6,1,0.8,1,0.8,name_plus_def
+BM25,Maritime management,2,0,0.0,0,0.0,0,0.0,1,0.5,1,1.0,1,1.0,1,1.0,name_plus_def
+BM25,Monitoring,32,0,0.0,1,0.0312,1,0.0625,1,0.0625,1,0.125,1,0.1875,1,0.2812,name_plus_def
+BM25,Multi-level management,18,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,name_plus_def
+BM25,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+BM25,Research,23,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+BM25,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+BM25,Restoration,5,1,0.2,1,0.2,1,0.2,1,0.2,1,0.2,1,0.4,1,0.4,name_plus_def
+BM25,Soil subsidence,2,1,0.5,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,name_plus_def
+BM25,Stakeholder collaboration,39,1,0.0256,1,0.0256,1,0.0513,1,0.0513,1,0.0513,1,0.1026,1,0.1538,name_plus_def
+BM25,Water management,40,0,0.0,0,0.0,0,0.0,0,0.0,1,0.05,1,0.1,1,0.225,name_plus_def
+Bi-encoder,Adaptation,14,0,0.0,0,0.0,0,0.0,1,0.0714,1,0.1429,1,0.3571,1,0.5,name_plus_def
+Bi-encoder,Assessment,22,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1364,1,0.1818,name_plus_def
+Bi-encoder,Climate change,42,1,0.0238,1,0.0476,1,0.0476,1,0.0952,1,0.119,1,0.3333,1,0.5238,name_plus_def
+Bi-encoder,Coherence,25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+Bi-encoder,Conservation,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1132,name_plus_def
+Bi-encoder,Fisheries management,7,1,0.1429,1,0.4286,1,0.7143,1,0.8571,1,0.8571,1,1.0,1,1.0,name_plus_def
+Bi-encoder,Framework,44,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0682,1,0.1364,1,0.2273,name_plus_def
+Bi-encoder,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.125,1,0.25,1,0.375,name_plus_def
+Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,1,0.1852,name_plus_def
+Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.5833,name_plus_def
+Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0476,1,0.0635,1,0.1111,name_plus_def
+Bi-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.1471,1,0.2647,name_plus_def
+Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.4,name_plus_def
+Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,name_plus_def
+Bi-encoder,Monitoring,32,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0625,1,0.2188,name_plus_def
+Bi-encoder,Multi-level management,18,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0556,1,0.2778,1,0.3889,name_plus_def
+Bi-encoder,Prohibition,6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+Bi-encoder,Research,23,0,0.0,1,0.0435,1,0.0435,1,0.0435,1,0.087,1,0.1304,1,0.2609,name_plus_def
+Bi-encoder,Research gap,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
+Bi-encoder,Restoration,5,0,0.0,0,0.0,0,0.0,0,0.0,1,0.2,1,0.2,1,0.4,name_plus_def
+Bi-encoder,Soil subsidence,2,1,0.5,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,name_plus_def
+Bi-encoder,Stakeholder collaboration,39,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0256,1,0.1282,1,0.1795,name_plus_def
+Bi-encoder,Water management,40,0,0.0,0,0.0,0,0.0,1,0.025,1,0.05,1,0.175,1,0.275,name_plus_def

@@ -1,0 +1,25 @@
+label,n_positives,MRR,Hit@3,AP
+Soil subsidence,2,1.0,1,0.5435
+Limited heritage inclusion,4,1.0,1,0.2639
+Climate change,42,1.0,1,0.2503
+Management variation,5,1.0,1,0.2188
+Human activities,12,1.0,1,0.1687
+Fisheries management,7,1.0,1,0.1673
+Stakeholder collaboration,39,1.0,1,0.0676
+Maritime management,2,0.5,1,0.5
+Restoration,5,0.5,1,0.2532
+Framework,44,0.5,1,0.0649
+Assessment,22,0.5,1,0.0516
+Adaptation,14,0.3333,1,0.0888
+Heritage inclusion,27,0.3333,1,0.0456
+Water management,40,0.25,0,0.056
+Monitoring,32,0.25,0,0.0491
+Greenery,8,0.2,0,0.1862
+Conservation,53,0.1429,0,0.051
+Multi-level management,18,0.125,0,0.0576
+Knowledge transfer,63,0.1,0,0.0934
+Legislation,34,0.0556,0,0.0528
+Research,23,0.0476,0,0.0151
+Prohibition,6,0.0078,0,0.0044
+Coherence,25,0.0057,0,0.01
+Research gap,1,0.0054,0,0.0054

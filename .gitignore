@@ -1,0 +1,49 @@
+# Secrets -- never commit. The upstream project root holds a .env with a
+# TU Delft TULIP API key; it must never be staged here.
+.env
+.env.*
+*.key
+secrets.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Model / embedding caches (large, regenerable)
+*.pkl
+*.npy
+
+# OS
+.DS_Store
+Thumbs.db

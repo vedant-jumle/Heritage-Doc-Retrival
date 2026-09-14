@@ -1,0 +1,17 @@
+You are an expert in heritage management and climate adaptation.
+
+Heritage concept label: {label}
+Definition: {definition}
+
+Text chunk:
+\"\"\"{truncated}\"\"\"
+
+Task: Rate how relevant the text chunk is to the heritage concept label above,
+on a scale of 1-5:
+1 = not relevant
+2 = slightly relevant
+3 = moderately relevant
+4 = relevant
+5 = highly relevant
+
+Respond with ONLY JSON, no other text: {{"score": <1-5>, "reason": "<one short sentence>"}}

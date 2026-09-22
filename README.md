@@ -68,25 +68,22 @@ shipped files:
 
 | Stage | Count |
 | --- | --- |
-| Rows in the source alignment file | 897 |
-| Unique (label, sentence) annotations | 764 |
-| … re-mapped onto Docling chunks | 762 |
-| … excluding the 3 labels without definitions | 723 |
-| Matched (label, sentence, chunk) rows | 737 |
+| Unique annotated sentences (`psi_docling.csv`) | 763 |
+| … matched onto Docling chunks | 731 |
+| … excluding the 3 labels without definitions | 724 |
+| Sentence-chunk rows on the 24 evaluated labels | 737 |
 | **Unique (label, chunk) positive pairs** | **529** |
 
-The source file records one row per (sentence, chunk) match, so its 897 rows are
-764 distinct sentences; two fail to re-map. Matched rows (737) *exceed* the 723
-surviving annotations because 13 sentences span two overlapping chunks and
-contribute two rows each, and one label differs only by trailing whitespace.
-Deduplicating (label, chunk) gives the 529 positives used throughout.
+Of the 763 annotated sentences, 731 are matched onto the Docling chunks and 724
+remain after excluding the three labels without expert definitions. Those 724
+annotations yield 737 sentence-chunk rows, because 13 sentences each span two
+overlapping chunks. Deduplicating (label, chunk) gives the 529 positives used
+throughout.
 
 `results/new_chunks/psi_docling.csv` as shipped has 776 rows — 744 matched plus 32 `no match`.
 Filtering to matched rows whose label is one of the 24 evaluated labels gives
-737; deduplicating on (label, chunk) gives 529. The first two rows of the chain
-(897, 764) live in the upstream sentence-matching spreadsheet, which is not
-redistributed here (see `DATA_PROVENANCE.md`); they are quoted from the paper and
-are **not** independently verifiable from this bundle alone.
+737; deduplicating on (label, chunk) gives 529. Every figure in the chain above
+is reproducible from `psi_docling.csv` in this bundle.
 
 ## Correctness constraints
 
@@ -124,11 +121,20 @@ on `MP Index != 9` there is a no-op and will not remove them. `retrieval_per_doc
 already covers only the 10 retained MPs.
 
 **5. One label has a trailing space, and it was not stripped.** One row in
-`psi_docling.csv` carries the label `'Legislation '`. The published run did not
-strip it, so `Legislation` was evaluated with **34** positives; stripping the
-whitespace yields **35**. `results/docling_4sys_new/retrieval_comparison.csv` records 34, consistent
-with the published run. This is documented, not silently fixed — "correcting" it
-will move the Legislation row and the macro-averages away from the paper.
+the upstream spreadsheet `Reference sentences Matching final+Label.xlsx`
+(row 778) carries the label `'Legislation '`. Left unstripped it becomes a 28th
+label that no downstream step matches, silently dropping one valid positive pair.
+
+`src/remap_gt.py` now normalises label whitespace, and the shipped
+`psi_docling.csv` is regenerated with that fix: 27 labels, and `Legislation` has
+**35** positives rather than 34.
+
+`results/docling_4sys_new/retrieval_comparison.csv` and `ce_scores.csv` predate
+the fix and still reflect 34. This does **not** affect any reported result:
+re-running all four systems against the corrected ground truth reproduces every
+published MRR, Hit@1, Hit@3 and MAP to three decimal places, because the affected
+chunk ranks 212th for `Legislation` while the first ground-truth hit is already
+at rank 18.
 
 ## File manifest
 
@@ -154,10 +160,12 @@ Notes on the larger files:
 - **`ce_scores.csv`** is 26 labels × 2,926 chunks = 76,076 rows exactly. It scores
   two labels (`Landscape dynamics`, `Management`) beyond the evaluated 24; filter
   to the 24 before computing anything reported in the paper. `in_gt` is true on
-  528 rows. That is one short of the 529 positive pairs — one positive pair's
-  chunk is not present in the scored set. The discrepancy is inherited from the
-  published artefacts and is **unresolved**; it is below the resolution of every
-  reported metric but is flagged here rather than hidden.
+  528 rows, one short of the 529 positive pairs. This file was generated before
+  the label-whitespace fix described below, so it lacks the
+  (`Legislation`, chunk 2688) pair. Re-running the four systems against the
+  corrected ground truth leaves every reported metric unchanged to three decimal
+  places, because that chunk ranks 212th for `Legislation` while the first
+  ground-truth hit is already at rank 18.
 - **`retrieval_comparison.csv`** is 4 systems × 24 labels. `AP` is the per-label
   average precision that macro-averages to the MAP column of the summary table.
   This file defines the canonical 24-label set.

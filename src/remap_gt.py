@@ -98,6 +98,10 @@ def load_sentences() -> pd.DataFrame:
     df = pd.read_excel(PSI_FILE)
     # Filter out "no match" rows (any capitalisation)
     df = df[~df["Match Type"].str.strip().str.lower().eq("no match")]
+    # Normalise label whitespace. The source spreadsheet contains one row with
+    # 'Legislation ' (trailing space); left unstripped it becomes a 28th label
+    # that no downstream step matches, silently dropping a valid positive pair.
+    df["Label"] = df["Label"].astype(str).str.strip()
     df = df[["Label", "Sentence"]].drop_duplicates(subset=["Sentence"])
     df = df.reset_index(drop=True)
     return df

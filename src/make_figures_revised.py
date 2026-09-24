@@ -157,11 +157,13 @@ def fig_ablation():
     # The ablation grid's own primary point is 940 chars (2,881 chunks) -- a
     # separate re-chunking from the paper's 1,000-char main config (2,926).
     ax.axvline(sizes.index(940), color="#666", lw=1.0, ls=":", zorder=1)
+    # Label sits inside the axes just right of the line, below the legend band,
+    # so it clears both the title and the plotted series.
     ax.annotate(
-        "ablation reference\n940 chars",
-        xy=(sizes.index(940), 1.0), xycoords=("data", "axes fraction"),
-        xytext=(0, 4), textcoords="offset points",
-        fontsize=7, color="#666", ha="center", va="bottom",
+        "ablation reference",
+        xy=(sizes.index(940), 0.88), xycoords=("data", "axes fraction"),
+        xytext=(4, 0), textcoords="offset points",
+        fontsize=7, color="#666", ha="left", va="center",
     )
 
     n_chunks = ab.drop_duplicates("chunk_size").set_index("chunk_size").n_chunks
@@ -180,8 +182,22 @@ def fig_ablation():
 def fig_ce_histogram():
     """Paper Fig 3. Two overlaid step histograms; hatch + linestyle separate them."""
     ce = pd.read_csv(CE_SCORES)
-    pos = ce[ce.in_gt == 1].ce_score
-    neg = ce[ce.in_gt == 0].ce_score
+
+    # The score file covers 26 labels (it also scores 'Landscape dynamics' and
+    # 'Management'). The paper evaluates 24, so restrict to those before
+    # plotting: 24 x 2,926 = 70,224 pairs, not 26 x 2,926 = 76,076.
+    evaluable = set(pd.read_csv(CMP).label.unique())
+    ce = ce[ce.label.isin(evaluable)]
+
+    # This file predates the label-whitespace fix, so it marks 528 positives
+    # rather than 529. Restore the missing (Legislation, 2688) pair so the
+    # figure matches the ground truth reported in the paper.
+    ce["in_gt"] = ce["in_gt"].astype(bool)
+    miss = (ce.label == "Legislation") & (ce.chunk_id == 2688)
+    ce.loc[miss, "in_gt"] = True
+
+    pos = ce[ce.in_gt].ce_score
+    neg = ce[~ce.in_gt].ce_score
 
     fig, ax = plt.subplots(figsize=(6.5, 3.6))
     ax.set_title("Cross-encoder score distribution")

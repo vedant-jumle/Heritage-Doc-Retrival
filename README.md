@@ -159,16 +159,23 @@ Notes on the larger files:
 
 - **`ce_scores.csv`** is 26 labels × 2,926 chunks = 76,076 rows exactly. It scores
   two labels (`Landscape dynamics`, `Management`) beyond the evaluated 24; filter
-  to the 24 before computing anything reported in the paper. `in_gt` is true on
-  528 rows, one short of the 529 positive pairs. This file was generated before
-  the label-whitespace fix described below, so it lacks the
-  (`Legislation`, chunk 2688) pair. Re-running the four systems against the
-  corrected ground truth leaves every reported metric unchanged to three decimal
-  places, because that chunk ranks 212th for `Legislation` while the first
-  ground-truth hit is already at rank 18.
+  to the 24 before computing anything reported in the paper. The `ce_score`
+  column is the original published output; the `in_gt` flag has been recomputed
+  from the corrected `psi_docling.csv` and is true on **529** rows.
 - **`retrieval_comparison.csv`** is 4 systems × 24 labels. `AP` is the per-label
   average precision that macro-averages to the MAP column of the summary table.
   This file defines the canonical 24-label set.
+
+  **It is deliberately frozen at the published run** and therefore records 34
+  positives for `Legislation` rather than the corrected 35. Every other file in
+  this bundle uses the corrected ground truth. Re-running all four systems
+  against it reproduces every published MRR, Hit@1, Hit@3 and MAP to three
+  decimal places, because the affected chunk ranks 212th for `Legislation`
+  while the first ground-truth hit is already at rank 18 — but per-label
+  recall does move (`Legislation` R@20 goes from 0.088 to 0.114), so derive
+  per-label figures from `results/revision/hit_at_k_per_label.csv`, not from
+  this file. `results/revision/per_label_crossencoder.csv` is a view of this
+  frozen run and likewise shows 34.
 - **`llm_judge_pairs_docling.csv`** holds 144 ratings across three buckets:
   A = ground-truth positives (47), B = top-ranked chunks not in ground truth (73),
   C = low-ranked chunks not in ground truth (24). Scores are integers 1–5 with no

@@ -69,17 +69,17 @@ def load_chunks():
     return c[c.mp_index != BEEMSTER_MP].reset_index(drop=True)
 
 
-def load_gt(labels, strip_labels=False):
+def load_gt(labels, strip_labels=True):
     """Positive chunk sets per label, from the psi alignment.
 
-    One psi row carries 'Legislation ' with a trailing space. The published run
-    did NOT strip it, so that row was dropped and Legislation was evaluated with
-    34 positives rather than 35. `strip_labels=False` reproduces the published
-    behaviour; True is the corrected ground truth (see revision_audit.py).
+    `psi_docling.csv` is now generated with label whitespace normalised (see
+    remap_gt.py), so stripping here is a no-op kept as a guard. Before that fix
+    the file carried one 'Legislation ' row with a trailing space, which was
+    silently dropped and gave Legislation 34 positives instead of 35.
     """
     d = pd.read_csv(PSI)
     if strip_labels:
-        d["Label"] = d["Label"].str.strip()
+        d["Label"] = d["Label"].astype(str).str.strip()
     d = d.dropna(subset=["Chunk ID"])
     d = d[d.Label.isin(labels)]
     return {lab: set(g["Chunk ID"].astype(int)) for lab, g in d.groupby("Label")}

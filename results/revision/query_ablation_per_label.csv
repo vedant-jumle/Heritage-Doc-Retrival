@@ -10,7 +10,7 @@ BM25,Greenery,8,0,0.0,0,0.0,0,0.0,0,0.0,1,0.125,1,0.5,1,0.5,name_only
 BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.037,1,0.037,name_only
 BM25,Human activities,12,0,0.0,0,0.0,1,0.0833,1,0.1667,1,0.1667,1,0.1667,1,0.25,name_only
 BM25,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0952,1,0.1746,name_only
-BM25,Legislation,34,1,0.0294,1,0.0294,1,0.0294,1,0.0294,1,0.0294,1,0.0882,1,0.0882,name_only
+BM25,Legislation,35,1,0.0286,1,0.0571,1,0.0571,1,0.0571,1,0.0571,1,0.1143,1,0.1143,name_only
 BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
 BM25,Management variation,5,0,0.0,0,0.0,1,0.2,1,0.2,1,0.2,1,0.2,1,0.2,name_only
 BM25,Maritime management,2,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
@@ -34,7 +34,7 @@ Bi-encoder,Greenery,8,0,0.0,0,0.0,1,0.125,1,0.125,1,0.125,1,0.125,1,0.25,name_on
 Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0741,name_only
 Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
 Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0317,1,0.0635,1,0.0794,name_only
-Bi-encoder,Legislation,34,0,0.0,0,0.0,1,0.0294,1,0.0294,1,0.0588,1,0.1176,1,0.1176,name_only
+Bi-encoder,Legislation,35,0,0.0,0,0.0,1,0.0286,1,0.0286,1,0.0857,1,0.1429,1,0.1429,name_only
 Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
 Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_only
 Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,name_only
@@ -58,7 +58,7 @@ BM25,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.375,1,0.75,def_only
 BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,1,0.0741,1,0.0741,1,0.0741,1,0.2222,def_only
 BM25,Human activities,12,0,0.0,0,0.0,0,0.0,1,0.0833,1,0.1667,1,0.25,1,0.4167,def_only
 BM25,Knowledge transfer,63,0,0.0,1,0.0159,1,0.0159,1,0.0159,1,0.0317,1,0.1587,1,0.254,def_only
-BM25,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0294,1,0.1176,1,0.2647,def_only
+BM25,Legislation,35,0,0.0,0,0.0,0,0.0,1,0.0286,1,0.0286,1,0.1143,1,0.2571,def_only
 BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.5,def_only
 BM25,Management variation,5,0,0.0,1,0.2,1,0.2,1,0.4,1,0.4,1,0.6,1,0.8,def_only
 BM25,Maritime management,2,0,0.0,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,def_only
@@ -82,7 +82,7 @@ Bi-encoder,Greenery,8,0,0.0,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.375,def_only
 Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,1,0.2593,def_only
 Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0833,1,0.3333,1,0.75,def_only
 Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0476,1,0.127,def_only
-Bi-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.1176,1,0.1765,1,0.2353,def_only
+Bi-encoder,Legislation,35,0,0.0,0,0.0,0,0.0,1,0.0286,1,0.1143,1,0.2,1,0.2571,def_only
 Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,def_only
 Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.2,1,0.4,def_only
 Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,def_only
@@ -106,7 +106,7 @@ BM25,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.75,1,0.875,name_plus_def
 BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,1,0.0741,1,0.0741,1,0.0741,1,0.1852,name_plus_def
 BM25,Human activities,12,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.1667,1,0.4167,1,0.4167,name_plus_def
 BM25,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0159,1,0.0476,1,0.1746,1,0.2698,name_plus_def
-BM25,Legislation,34,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.2353,name_plus_def
+BM25,Legislation,35,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0286,1,0.0857,1,0.2286,name_plus_def
 BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.25,name_plus_def
 BM25,Management variation,5,0,0.0,1,0.2,1,0.2,1,0.6,1,0.6,1,0.8,1,0.8,name_plus_def
 BM25,Maritime management,2,0,0.0,0,0.0,0,0.0,1,0.5,1,1.0,1,1.0,1,1.0,name_plus_def
@@ -130,7 +130,7 @@ Bi-encoder,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.125,1,0.25,1,0.375,name_plus
 Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,1,0.1852,name_plus_def
 Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.5833,name_plus_def
 Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0476,1,0.0635,1,0.1111,name_plus_def
-Bi-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.1471,1,0.2647,name_plus_def
+Bi-encoder,Legislation,35,0,0.0,0,0.0,0,0.0,1,0.0571,1,0.1143,1,0.1714,1,0.2857,name_plus_def
 Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,name_plus_def
 Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.4,name_plus_def
 Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,name_plus_def

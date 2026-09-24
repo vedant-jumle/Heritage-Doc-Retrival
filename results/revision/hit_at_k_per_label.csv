@@ -10,7 +10,7 @@ BM25,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.25,1,0.75,1,0.875
 BM25,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,1,0.0741,1,0.0741,1,0.0741,1,0.1852
 BM25,Human activities,12,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.1667,1,0.4167,1,0.4167
 BM25,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0159,1,0.0476,1,0.1746,1,0.2698
-BM25,Legislation,34,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.2353
+BM25,Legislation,35,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0286,1,0.0857,1,0.2286
 BM25,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.25
 BM25,Management variation,5,0,0.0,1,0.2,1,0.2,1,0.6,1,0.6,1,0.8,1,0.8
 BM25,Maritime management,2,0,0.0,0,0.0,0,0.0,1,0.5,1,1.0,1,1.0,1,1.0
@@ -34,7 +34,7 @@ Bi-encoder,Greenery,8,0,0.0,0,0.0,0,0.0,1,0.125,1,0.125,1,0.25,1,0.375
 Bi-encoder,Heritage inclusion,27,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1111,1,0.1852
 Bi-encoder,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.1667,1,0.5833
 Bi-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0317,1,0.0476,1,0.0635,1,0.1111
-Bi-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0882,1,0.1471,1,0.2647
+Bi-encoder,Legislation,35,0,0.0,0,0.0,0,0.0,1,0.0571,1,0.1143,1,0.1714,1,0.2857
 Bi-encoder,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
 Bi-encoder,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.4
 Bi-encoder,Maritime management,2,1,0.5,1,0.5,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0
@@ -58,7 +58,7 @@ Dense + Rerank,Greenery,8,0,0.0,1,0.125,1,0.125,1,0.25,1,0.25,1,0.25,1,0.375
 Dense + Rerank,Heritage inclusion,27,0,0.0,1,0.037,1,0.037,1,0.037,1,0.0741,1,0.1111,1,0.1852
 Dense + Rerank,Human activities,12,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0833,1,0.1667,1,0.5833
 Dense + Rerank,Knowledge transfer,63,0,0.0,0,0.0,1,0.0159,1,0.0159,1,0.0317,1,0.0635,1,0.1111
-Dense + Rerank,Legislation,34,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0588,1,0.1471,1,0.2647
+Dense + Rerank,Legislation,35,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0571,1,0.1714,1,0.2857
 Dense + Rerank,Limited heritage inclusion,4,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
 Dense + Rerank,Management variation,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.4
 Dense + Rerank,Maritime management,2,0,0.0,1,1.0,1,1.0,1,1.0,1,1.0,1,1.0,1,1.0
@@ -82,7 +82,7 @@ Cross-encoder,Greenery,8,0,0.0,0,0.0,1,0.125,1,0.25,1,0.5,1,0.75,1,0.875
 Cross-encoder,Heritage inclusion,27,0,0.0,1,0.037,1,0.037,1,0.037,1,0.037,1,0.0741,1,0.2222
 Cross-encoder,Human activities,12,1,0.0833,1,0.0833,1,0.0833,1,0.0833,1,0.0833,1,0.5,1,0.75
 Cross-encoder,Knowledge transfer,63,0,0.0,0,0.0,0,0.0,1,0.0159,1,0.0317,1,0.1429,1,0.2222
-Cross-encoder,Legislation,34,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0294,1,0.0294,1,0.2059
+Cross-encoder,Legislation,35,0,0.0,0,0.0,0,0.0,0,0.0,1,0.0286,1,0.0286,1,0.2
 Cross-encoder,Limited heritage inclusion,4,1,0.25,1,0.25,1,0.25,1,0.25,1,0.25,1,0.25,1,0.25
 Cross-encoder,Management variation,5,1,0.2,1,0.2,1,0.2,1,0.2,1,0.2,1,0.4,1,0.4
 Cross-encoder,Maritime management,2,0,0.0,1,0.5,1,1.0,1,1.0,1,1.0,1,1.0,1,1.0

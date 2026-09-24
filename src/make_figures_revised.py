@@ -189,12 +189,7 @@ def fig_ce_histogram():
     evaluable = set(pd.read_csv(CMP).label.unique())
     ce = ce[ce.label.isin(evaluable)]
 
-    # This file predates the label-whitespace fix, so it marks 528 positives
-    # rather than 529. Restore the missing (Legislation, 2688) pair so the
-    # figure matches the ground truth reported in the paper.
     ce["in_gt"] = ce["in_gt"].astype(bool)
-    miss = (ce.label == "Legislation") & (ce.chunk_id == 2688)
-    ce.loc[miss, "in_gt"] = True
 
     pos = ce[ce.in_gt].ce_score
     neg = ce[~ce.in_gt].ce_score

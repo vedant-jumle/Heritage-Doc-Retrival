@@ -19,7 +19,11 @@ the alignment output, and the LLM-as-judge prompts and judgements.
 @inproceedings{jumle2026retrieving,
   title     = {Retrieving Climate Change Adaptation Concepts from World Heritage
                Management Plans in the Netherlands},
-  author    = {Jumle, Vedant},
+  author    = {Jumle, Vedant and
+               Agao{\u{g}}lu, Orhan and
+               Mol, Laurens and
+               {Salas Giron{\'e}s}, Edgar and
+               Bai, Nan},
   booktitle = {Proceedings of the Workshop on Natural Language Processing
                for Climate Change (ClimateNLP)},
   year      = {2026},
@@ -323,3 +327,7 @@ The original Management Plan PDFs are **not** redistributed here — their
 redistribution rights are not established. See `DATA_PROVENANCE.md`, which also
 flags an open question about the extracted chunk text that should be resolved
 before this repository is made public.
+
+Technische Universiteit Delft hereby disclaims all copyright interest in the program “HEVA_toolkit” written by the Author(s). 
+
+-- Machiel van Dorst, Dean of Faculty of Architecture and the Built Environment

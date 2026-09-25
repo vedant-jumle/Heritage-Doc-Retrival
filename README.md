@@ -328,6 +328,6 @@ redistribution rights are not established. See `DATA_PROVENANCE.md`, which also
 flags an open question about the extracted chunk text that should be resolved
 before this repository is made public.
 
-Technische Universiteit Delft hereby disclaims all copyright interest in the program “HEVA_toolkit” written by the Author(s). 
+Technische Universiteit Delft hereby disclaims all copyright interest in the program “Heritage-Doc-Retrival” written by the Author(s). 
 
 -- Machiel van Dorst, Dean of Faculty of Architecture and the Built Environment
